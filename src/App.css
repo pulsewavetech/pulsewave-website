@@ -1,38 +1,107 @@
-.App {
-  text-align: center;
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: "Raleway", sans-serif;
+  background-color: #ffffff;
+  color: #333333;
+  padding-top: 54px; /* Adjusted to match navbar height */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Navbar Styles */
+.navbar {
+  background-color: #141652;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 999;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar-container {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+}
+
+/* Additional Navbar Styles */
+
+.navbar-logo {
+  color: #ffffff;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  margin: 0; /* Ensure no extra margin */
+}
+
+.navbar-menu li {
+  margin-left: 20px;
+}
+
+.navbar-menu a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.navbar-menu a:hover {
+  color: #17d2a8;
+}
+
+/* Hero Section */
+.hero-section {
+  background-color: #141652;
+  height: 100vh;
+  position: relative;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.hero-overlay h1 {
+  color: #ffffff;
+  font-size: 60px;
+  text-transform: uppercase;
+  margin: 0; /* Remove default margins */
+}
+/* Mission Statement and Contact Us Sections */
+.mission-statement-section,
+.contact-us-section {
+  padding: 60px 15px; /* Restore vertical padding */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.mission-statement-section h2,
+.contact-us-section h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: #141652;
+  margin-top: 0; /* Ensure no unwanted top margin */
+}
+
+.mission-statement-section p,
+.contact-us-section p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Restore default line height for paragraphs */
+p {
+  line-height: 1.6;
 }

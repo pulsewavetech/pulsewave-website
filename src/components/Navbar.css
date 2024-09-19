@@ -1,0 +1,42 @@
+.navbar {
+  background-color: #141652; /* Matches the hero section background */
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 999;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+}
+
+.navbar-logo {
+  color: #ffffff;
+  font-size: 24px;
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+}
+
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  margin: 0;
+}
+
+.navbar-menu li {
+  margin-left: 20px;
+}
+
+.navbar-menu a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: "Raleway", sans-serif;
+}
+
+.navbar-menu a:hover {
+  color: #17d2a8; /* Accent color for hover effect */
+}
